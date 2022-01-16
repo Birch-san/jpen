@@ -236,11 +236,8 @@ along with jpen.  If not, see <http://www.gnu.org/licenses/>.
       <id>osx</id>
       <activation>
         <os>
-          <name>mac os x</name>          
+          <family>mac</family>
         </os>
-        <file>
-            <exists>/System/Library/Frameworks/JavaVM.framework/Versions/Current/Headers/</exists>
-        </file>    
       </activation>
       <properties>
         <source.dir>src/main/c/osx</source.dir>
@@ -258,11 +255,12 @@ along with jpen.  If not, see <http://www.gnu.org/licenses/>.
                               <option>-mmacosx-version-min=10.9</option>
                               <option>-arch</option>
                               <option>x86_64</option>
-                            <option>-arch</option>
-                            <option>arm64</option>
+                              <option>-arch</option>
+                              <option>arm64</option>
                           </options>
                       </c>
                       <linker>
+                          <name>gcc</name>
                           <options>
                               <option>-mmacosx-version-min=10.9</option>
                               <option>-arch</option>
