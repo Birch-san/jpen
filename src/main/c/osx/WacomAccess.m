@@ -68,13 +68,10 @@ OSErr	ResendLastTabletEventofType(DescType tabletEventType)
 						 sizeof(tabletEventType)); // Add what type of event to send.
 	
 	// Finally send the event
-	err = AESend(&aeSend,	// The complete AE we created above
+	err = AESendMessage(&aeSend,	// The complete AE we created above
 				 NULL,
 				 kAEWaitReply,
-				 kAEHighPriority,
-				 kDefaultTimeOut,
-				 NULL,
-				 NULL);
+				 kDefaultTimeOut);
 	
 	AEDisposeDesc(&aeSend);
 	
