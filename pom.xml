@@ -258,6 +258,8 @@ along with jpen.  If not, see <http://www.gnu.org/licenses/>.
                               <option>-mmacosx-version-min=10.9</option>
                               <option>-arch</option>
                               <option>x86_64</option>
+                            <option>-arch</option>
+                            <option>arm64</option>
                           </options>
                       </c>
                       <linker>
@@ -265,6 +267,8 @@ along with jpen.  If not, see <http://www.gnu.org/licenses/>.
                               <option>-mmacosx-version-min=10.9</option>
                               <option>-arch</option>
                               <option>x86_64</option>
+                              <option>-arch</option>
+                              <option>arm64</option>
                               <option>-framework</option>
                               <option>Cocoa</option>
                               <option>-framework</option>
